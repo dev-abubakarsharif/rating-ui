@@ -24,6 +24,7 @@ const Rating = () => {
           </span>
         ))}
       </div>
+      {rating >0 && <p className="feedback"> {feedbackMessages[rating - 1]}</p>}
     </div>
   );
 };
